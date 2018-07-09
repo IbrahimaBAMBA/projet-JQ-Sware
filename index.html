@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Exo:400,500,600,900" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+  <!-- <link rel="stylesheet" href="assets/css/jquery-ui.css" /> -->
+  <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css" rel="stylesheet" integrity="sha384-RpX8okQqCyUNG7PlOYNybyJXYTtGQH+7rIKiVvg1DLg6jahLEk47VvpUyS+E2/uJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <title>S-ware : harware store</title>
+</head>
+<body>
+  <header class="container-fluid">
+    <!-- header row1 = logo + search + toggle button -->
+    <div class="row">
+      <!-- logo -->
+      <div class="col-md-5 col-sm-12" id="logo">
+        <img src="assets/img/sware-logo-200.png" alt="S-ware logo">
+        <div>
+          <h1>S-ware</h1>
+          <h2>hardware&nbsp;store</h2>
+        </div>
+      </div>
+      <!-- fin logo -->
+      <!-- navigation : search input + toggle button -->
+      <div class="col-md-7 col-sm-12" id="navigation">
+        <div class="row" >
+          <div class="offset-md-6 col-md-6 col-xs-9" id="search">
+            <form class="navbar-form" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Rechercher un produit" aria-describedby="basic-addon1">
+                <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search" aria-hidden="true"></i></span>
+              </div>
+            </form>
+          </div>
+          <div class="col-xs-3 navbar navbar-expand-md navbar-dark  hidden-lg hidden-md hidden-sm" id="hamburger">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header row2 = navbar -->
+    <div class="row">
+      <div class="col-xs-12" id="menu">
+        <nav class="navbar navbar-expand-md navbar-dark ">
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav">
+              <li class="nav-item ">
+                <a class="nav-link" href="#motherboards">Cartes&nbsp;mères <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cpu">Processeurs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cgu">Cartes&nbsp;graphiques</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ram">RAM</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Carousel
+  ================================================== -->
+  <div class="container-fluid" id="slider">
+    <div class="row">
+      <div class="col-lg-12">
+
+        <div id="myCarousel" class="carousel slide col-lg-12 hidden-xs hidden-sm" data-ride="carousel">
+  <!-- Indicators -->
+  <ul class="carousel-indicators ">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ul>
+  <!--The slideshow -->
+  <div class="carousel-inner">
+
+    <div class="row item active">
+        <div id="slide1" class="col-md-offset-1 col-md-4"><img src="assets/img/slidepromo1.jpg" alt="processeur1"></div>
+        <div class="col-md-offset-1 col-md-3"><img src="assets/img/pop4.png" alt="pop"></div>
+        <div id="jq1"class="col-md-3"><p><h1>Arrivage !</h1><hr><h2>Premier arrivé premier servi!</h2></p></div>
+    </div>
+
+    <div class="row item">
+      <div id="slide2" class="col-md-offset-1 col-md-4"><img src="assets/img/slidepromo2.jpeg" alt="processeur2"></div>
+      <div class="col-md-offset-1 col-md-3"><img src="assets/img/pop7.jpg" alt=""></div>
+      <div id="jg2" class="col-md-3"><p><h1>Exclusivité web !</h1><hr><h2>A ne pas manquer !</h2></p></div>
+    </div>
+
+    <div class="row item">
+      <div id="slide3" class="col-md-offset-1 col-md-4"><img src="assets/img/slidepromo3.png" alt="graphiquegamer3"></div>
+      <div class="col-md-offset-1 col-md-3"><img src="assets/img/pop1.jpeg" alt="popup"></div>
+      <div id="jq3" class="col-md-3"><p><h1>Offre soumise à condition</h1></p> <p>Uniquement l'après midi du 13/11/17.<br><hr>Après notre presentation on ferme boutique,</p></div>
+   </div>
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon glyphicon-menu-left"></span>
+    <!-- <span class="carousel-control-prev-icon">Previous</span> -->
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon glyphicon-menu-right"></span>
+    <!-- <span class="carousel-control-next-icon">Next</span> -->
+  </a>
+</div>
+</div>
+
+      </div>
+    </div>
+  </div><!-- /.carousel -->
+
+  <div class="container-fluid" id="content">
+    <div class="row">
+<div class="col-lg-9 col-md-12" id="products">
+  <section class="row" id="motherboards"><!-- Cartes Meres -->
+
+    <h2 class="col-xs-12 card text-white bg-dark border-info">Cartes mères</h2>
+
+    <article id="article-cm0001" class="col-lg-3 col-md-6 col-xs-12"><!-- Carte mere 1 -->
+      <div class="card">
+        <h3 class="card-header" id="title-cm0001">Carte mère ASRock P4I65G</h3>
+        <img class="card-img-top" id="img-cm0001" src="assets/img/images.jpeg" title="carte mère 1" alt="carte mère" />
+        <div class="card-body">
+          <p class="card-text" id="description-cm0001"><!-- description -->
+            Socket 478 for Intel® Pentium® 4 / Celeron® D (Prescott, Northwood, Willamette) processors
+            Intel® 865G Chipset
+            FSB800/533/400MHz processor, and H-T Technology
+            Supports Dual Channel DDR400 (DDR x 2 DIMMs)
+            Untied Overclocking : During Overclocking, FSB enjoys better margin due to fixed</p>
+            <p class="card-text text-success" id="price-cm0001">Prix : <span>122.95</span> €</p><!-- prix -->
+            <button id="cm0001" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-cm0001">Ref : cm0001</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+
+    <article id="article-cm0002" class="col-lg-3 col-md-6 col-xs-12"><!-- Carte mere 2 -->
+      <div class="card">
+        <h3 class="card-header" id="title-cm0002">Carte mère 3DS XL</h3>
+        <img class="card-img-top" id="img-cm0002" src="assets/img/image1.jpeg" title="carte mère 2" alt="carte mère" />
+        <div class="card-body">
+          <p class="card-text" id="description-cm0002"><!-- description -->
+            Socket 478 for Intel® Pentium® 4 / Celeron® D (Prescott, Northwood, Willamette) processors
+            Intel® 865G Chipset
+            FSB800/533/400MHz processor, and H-T Technology
+            Supports Dual Channel DDR400 (DDR x 2 DIMMs)
+            Untied Overclocking : During Overclocking, FSB enjoys better margin due to fixed</p>
+            <p class="card-text text-success" id="price-cm0002">Prix : <span>122.95</span> €</p><!-- prix -->
+            <button id="cm0002" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-cm0002">Ref : cm0002</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+
+    <article id="article-cm0003" class="col-lg-3 col-md-6 col-xs-12"><!-- Carte mere 3 -->
+      <div class="card">
+        <h3 class="card-header" id="title-cm0003">Carte mère Lenovo thinkpad</h3>
+        <img class="card-img-top" id="img-cm0003" src="assets/img/images2.jpeg" title="carte mère 3" alt="carte mère" />
+        <div class="card-body">
+          <p class="card-text" id="description-cm0003"><!-- description -->
+            Socket 478 for Intel® Pentium® 4 / Celeron® D (Prescott, Northwood, Willamette) processors
+            Intel® 865G Chipset
+            FSB800/533/400MHz processor, and H-T Technology
+            Supports Dual Channel DDR400 (DDR x 2 DIMMs)
+            Untied Overclocking : During Overclocking, FSB enjoys better margin due to fixed</p>
+
+            <p class="card-text text-success" id="price-cm0003">Prix : <span>122.95</span> €</p><!-- prix -->
+            <button id="cm0003" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-cm0003">Ref : cm0003</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+
+    <article id="article-cm0004" class="col-lg-3 col-md-6 col-xs-12"><!-- Carte mere 4 -->
+      <div class="card">
+        <h3 class="card-header" id="title-cm0004">Carte mère Asus</h3>
+        <img class="card-img-top" id="img-cm0004" src="assets/img/img.jpeg" title="carte mère 4" alt="carte mère" />
+        <div class="card-body">
+          <p class="card-text" id="description-cm0004"><!-- description -->
+            Socket 478 for Intel® Pentium® 4 / Celeron® D (Prescott, Northwood, Willamette) processors
+            Intel® 865G Chipset
+            FSB800/533/400MHz processor, and H-T Technology
+            Supports Dual Channel DDR400 (DDR x 2 DIMMs)
+            Untied Overclocking : During Overclocking, FSB enjoys better margin due to fixed</p>
+
+            <p class="card-text text-success" id="price-cm0004">Prix : <span>122.95</span> €</p><!-- prix -->
+            <button id="cm0004" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-cm0004">Ref : cm0004</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+  </section><!-- fin Cartes Meres -->
+
+  <section class="row" id="cpu"><!-- PROCO -->
+    <h2 class="col-xs-12 card text-white bg-dark border-info">Processeurs</h2>
+
+    <article id="article-cpu0001" class="col-lg-3 col-md-6 col-xs-12"><!-- PROCO 1 -->
+      <div class="card">
+        <h3 class="card-header" id="title-cpu0001">Intel Core i3-8100 (3.6 GHz)</h3>
+        <img class="card-img-top" id="img-cpu0001" src="assets/img/processeur3.jpg" title="cpu 1" alt="cpu" />
+        <div class="card-body">
+          <p class="card-text" id="description-cpu0001"><!-- description -->
+            Fréquence : 3.6 GHz (Turbo)
+            4 coeurs / 4 threads
+            Cache 6 Mo
+            Socket Intel LGA 1151
+            Contrôleur mémoire Dual Channel DDR4
+            Contrôleur PCI-Express 3.0 16x
+            Intel UHD Graphics 630
+            Enveloppe thermique maximale (TDP) : 65W</p>
+            <p class="card-text text-success" id="price-cpu0001">Prix : <span>249.95</span> €</p><!-- prix -->
+            <button id="cpu0001" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-cpu0001">Ref : cpu0001</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+
+    <article id="article-cpu0002" class="col-lg-3 col-md-6 col-xs-12"><!-- PROCO 2 -->
+      <div class="card">
+        <h3 class="card-header" id="title-cpu0002">Intel Core i5-7600K (3.8 GHz)</h3>
+        <img class="card-img-top" id="img-cpu0002" src="assets/img/processeur2.jpg" title="cpu 2" alt="cpu" />
+        <div class="card-body">
+          <p class="card-text" id="description-cpu0002"><!-- description -->
+            Fréquence : 3.8 GHz / 4.2 GHz (Turbo)
+            4 coeurs / 4 threads
+            Cache 6 Mo
+            Socket Intel LGA 1151
+            Contrôleur mémoire Dual Channel DDR3L/DDR4
+            Contrôleur PCI-Express 3.0 16x
+            Intel HD Graphics 630
+            Enveloppe thermique maximale (TDP) : 95W</p>
+            <p class="card-text text-success" id="price-cpu0002">Prix : <span>129.95</span> €</p><!-- prix -->
+            <button id="cpu0002" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-cpu0002">Re2f : cpu0002</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+
+    <article id="article-cpu0003" class="col-lg-3 col-md-6 col-xs-12"><!-- PROCO 3 -->
+      <div class="card">
+        <h3 class="card-header" id="title-cpu0003">Intel Core i7-7700K (4.2 GHz)</h3>
+        <img class="card-img-top" id="img-cpu0003" src="assets/img/processeur1.jpeg" title="cpu 3" alt="cpu" />
+        <div class="card-body">
+          <p class="card-text" id="description-cpu0003"><!-- description -->
+            Fréquence : 4.2 GHz / 4.5 GHz (Turbo)
+            4 coeurs / 8 threads
+            Cache 8 Mo
+            Socket Intel LGA 1151
+            Contrôleur mémoire Dual Channel DDR3L/DDR4
+            Contrôleur PCI-Express 3.0 16x
+            Intel HD Graphics 630
+            Enveloppe thermique maximale (TDP) : 95W</p>
+            <p class="card-text text-success" id="price-cpu0003">Prix : <span>354.95</span> €</p><!-- prix -->
+            <button id="cpu0003" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-cpu0003">Re2f : cpu0003</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+
+    <article id="article-cpu0004" class="col-lg-3 col-md-6 col-xs-12"><!-- PROCO 4 -->
+      <div class="card">
+        <h3 class="card-header" id="title-cpu0004">Intel Core i9-7940X (3.1 GHz)</h3>
+        <img class="card-img-top" id="img-cpu0004" src="assets/img/processeur4.jpg" title="cpu 4" alt="cpu" />
+        <div class="card-body">
+          <p class="card-text" id="description-cpu0004"><!-- description -->
+            Fréquence : 3.1 GHz / 4.4 GHz (Turbo)
+            14 coeurs / 28 threads
+            Cache 19.25 Mo
+            Socket Intel LGA 2066
+            Contrôleur mémoire DDR4 Quad-channel
+            Contrôleur PCI-Express 3.0 16x
+            Enveloppe thermique maximale (TDP) : 165W</p>
+            <p class="card-text text-success" id="price-cpu0004">Prix : <span>1399.95</span> €</p><!-- prix -->
+            <button id="cpu0004" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-cpu0004">Re2f : cpu0004</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+
+  </section><!-- fin PROCO -->
+
+  <section class="row" id="gpu"><!-- CARTES GRAPHIQUES -->
+    <h2 class="col-xs-12 card text-white bg-dark border-info">Cartes graphiques</h2>
+
+    <article id="article-gpu0001" class="col-lg-3 col-md-6 col-xs-12"><!-- CG 1 -->
+      <div class="card">
+        <h3 class="card-header" id="title-gpu0001">Nvidia GeForce 8400 GS</h3>
+        <img class="card-img-top" id="img-gpu0001" src="assets/img/cg1.jpg" title="gpu 1" alt="gpu" />
+        <div class="card-body">
+          <p class="card-text" id="description-gpu0001"><!-- description -->
+            GeForce 8500 GT avec un bus mémoire limité à 64 bits, au lieu de 128. Les fréquences restent
+            identiques (450 MHz pour le GPU, 900 MHz pour les unités de calcul et 400 MHz pour la mémoire)
+            tout comme le nombre d'unités déjà très faible (32 processeurs scalaires) puisqu'il correspond
+            à "4 pipelines classiques".</p>
+            <p class="card-text text-success" id="price-gpu0001">Prix : <span>144.95</span> €</p><!-- prix -->
+            <button id="gpu0001" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-gpu0001">Ref : gpu0001</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+
+    <article id="article-gpu0002" class="col-lg-3 col-md-6 col-xs-12"><!-- CG 2 -->
+      <div class="card">
+        <h3 class="card-header" id="title-gpu0002">Carte graphique USB 3.0</h3>
+        <img class="card-img-top" id="img-gpu0002" src="assets/img/cg2.jpg" title="gpu 2" alt="gpu" />
+        <div class="card-body">
+          <p class="card-text" id="description-gpu0002"><!-- description -->
+            La puce intégrée dans notre dock est la DL-3900, le haut de gamme de la marque. Elle propose
+            deux sorties vidéo, un contrôleur Ethernet à 1 gigabit/s, un codec audio intégré et un hub USB
+            2.0 et 3.0 intégré.
+            Dans notre modèle de test (Targus), on trouve une sortie vidéo DVI-D Single Link et une sortie
+            HDMI, mais d'autres combinaisons sont possibles</p>
+            <p class="card-text text-success" id="price-gpu0002">Prix : <span>66.95</span> €</p><!-- prix -->
+            <button id="gpu0002" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-gpu0002">Ref : gpu0002</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+
+    <article id="article-gpu0003" class="col-lg-3 col-md-6 col-xs-12"><!-- CG 3 -->
+      <div class="card">
+        <h3 class="card-header" id="title-gpu0003">Carte graphique pour professionnel-AMD FirePro</h3>
+        <img class="card-img-top" id="img-gpu0003" src="assets/img/cg3.png" title="gpu 3" alt="gpu" />
+        <div class="card-body">
+          <p class="card-text" id="description-gpu0003"><!-- description -->
+            Avec ses 8 Go de mémoire GDDR5 ultra-rapide, les améliorations apportées à GeometryBoost et ses
+            moteurs HD de multimédia, la carte graphique AMD FirePro™ W7100 offre les performances graphiques
+            haut de gamme et les fonctionnalités spéciales indispensables aux ingénieurs et aux créatifs pour
+            faire atteindre le niveau ultime à leurs projets.</p>
+            <p class="card-text text-success" id="price-gpu0003">Prix : <span>354.95</span> €</p><!-- prix -->
+            <button id="gpu0003" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-gpu0003">Ref : gpu0003</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+
+    <article id="article-gpu0004" class="col-lg-3 col-md-6 col-xs-12"><!-- CG 4 -->
+      <div class="card">
+        <h3 class="card-header" id="title-gpu0004">NVIDIA GeForce 210 - 1 Go</h3>
+        <img class="card-img-top" id="img-gpu0004" src="assets/img/cg4.jpeg" title="gpu 4" alt="gpu" />
+        <div class="card-body">
+          <p class="card-text" id="description-gpu0004"><!-- description -->
+            NVIDIA GeForce GT 1030 - 2 Go, Type de bus : PCI Express 3.0 x4, Horloge principale : 1227 MHz
+            Horloge boostée : 1468 MHz, Interfaces : DVI-D (liaison unique), HDMI Fonctions : Technologie Nvidia
+            CUDA, Nvidia PhysX-Ready, NVIDIA Adaptive Vertical Sync, technologie NVIDIA MFAA, NVIDIA GPU Boost 3.0,
+            technologie de GPU Pascal NVIDIA, HDCP</p>
+            <p class="card-text text-success" id="price-gpu0004">Prix : <span>212.95</span> €</p><!-- prix -->
+            <button id="gpu0004" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-gpu0004">Ref : gpu0004</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+
+  </section><!-- fin CARTES GRAPHIQUES -->
+
+  <section class="row" id="ram"><!-- RAM -->
+    <h2 class="col-xs-12 card text-white bg-dark border-info">Barrettes de RAM</h2>
+
+    <article id="article-ram0001" class="col-lg-3 col-md-6 col-xs-12"><!-- ram 1 -->
+      <div class="card">
+        <h3 class="card-header" id="title-ram0001">Barrette mémoire DDR2 Corsair</h3>
+        <img class="card-img-top" id="img-ram0001" src="assets/img/br1.jpg" title="ram 1" alt="ram" />
+        <div class="card-body">
+          <p class="card-text" id="description-ram0001"><!-- description -->
+            DDR2 Value Select 1 Go 667 MHz De la mémoire vive 1 Go à 128 Go de 400 MHz à 4333 MHz, Materiel.net
+            a sélectionné les meilleures barrettes mémoires parmi les plus grandes marques (Corsair,
+            Crucial, G.Skill et Kingston). Faites votre choix de cartes mémoires pour ajouter à votre
+            machine (Windows 7, Windows 8, Windows 10 ou Mac OS) des barrettes RAM DDR DDR2, DDR3 ou DDR4.</p>
+            <p class="card-text text-success" id="price-ram0001">Prix : <span>22.95</span> €</p><!-- prix -->
+            <button id="ram0001" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-ram0001">Ref : ram0001</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+
+    <article id="article-ram0002" class="col-lg-3 col-md-6 col-xs-12"><!-- ram 2 -->
+      <div class="card">
+        <h3 class="card-header" id="title-ram0002">Barrette mémoire DDR3 G.Skill</h3>
+        <img class="card-img-top" id="img-ram0002" src="assets/img/br2.jpg" title="ram 2" alt="ram" />
+        <div class="card-body">
+          <p class="card-text" id="description-ram0002"><!-- description -->
+            DDR3 Value Select 1 Go 667 MHz De la mémoire vive 1 Go à 128 Go de 400 MHz à 4333 MHz, Materiel.net
+            a sélectionné les meilleures barrettes mémoires parmi les plus grandes marques (Corsair,
+            Crucial, G.Skill et Kingston). Faites votre choix de cartes mémoires pour ajouter à votre
+            machine (Windows 7, Windows 8, Windows 10 ou Mac OS).</p>
+            <p class="card-text text-success" id="price-ram0002">Prix : <span>32.95</span> €</p><!-- prix -->
+            <button id="ram0002" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-ram0002">Ref : ram0002</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+
+    <article id="article-ram0003" class="col-lg-3 col-md-6 col-xs-12"><!-- ram 3 -->
+      <div class="card">
+        <h3 class="card-header" id="title-ram0003">Barrette mémoire DDR G.Skill</h3>
+        <img class="card-img-top" id="img-ram0003" src="assets/img/br3.jpg" title="ram 3" alt="ram" />
+        <div class="card-body">
+          <p class="card-text" id="description-ram0003"><!-- description -->
+            DDR G.Skill Value Select 1 Go 667 MHz De la mémoire vive 1 Go à 128 Go de 400 MHz à 4333 MHz, Materiel.net
+            a sélectionné les meilleures barrettes mémoires parmi les plus grandes marques (Corsair,
+            Crucial, G.Skill et Kingston). Faites votre choix de cartes mémoires pour ajouter à votre
+            machine (Windows 7, Windows 8, Windows 10 ou Mac OS) des barrettes RAM DDR DDR2, DDR3 ou DDR4.</p>
+            <p class="card-text text-success" id="price-ram0003">Prix : <span>17.95</span> €</p><!-- prix -->
+            <button id="ram0003" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-ram0003">Ref : ram0003</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+
+    <article id="article-ram0004" class="col-lg-3 col-md-6 col-xs-12"><!-- ram 4 -->
+      <div class="card">
+        <h3 class="card-header" id="title-ram0004">Ballistix Sport XT DDR3 4 Go 1600 MHz CAS 9</h3>
+        <img class="card-img-top" id="img-ram0004" src="assets/img/br4.jpg" title="ram 4" alt="ram" />
+        <div class="card-body">
+          <p class="card-text" id="description-ram0004"><!-- description -->
+            DDR3 Value Select 1 Go 667 MHz De la mémoire vive 1 Go à 128 Go de 400 MHz à 4333 MHz, Materiel.net
+            a sélectionné les meilleures barrettes mémoires parmi les plus grandes marques (Corsair,
+            Crucial, G.Skill et Kingston).</p>
+            <p class="card-text text-success" id="price-ram0004">Prix : <span>45.90</span> €</p><!-- prix -->
+            <button id="ram0004" class="btn btn-info" type="button" name="addToBasket">Ajouter au panier</button>
+        </div>
+        <div class="card-footer text-muted">
+        <p class="card-text reference" id="ref-ram0004">Ref : ram0004</p><!-- référence -->
+        </div>
+      </div>
+    </article>
+
+  </section><!-- fin RAM -->
+</div>
+      <aside class="col-lg-3 col-md-12" id="sidebar">
+        <!-- recapitulatif + bouton panier -->
+        <div class="card text-white bg-info">
+          <div class="card-body">
+            <h3 class="card-title">Votre panier</h3>
+            <ul class="list-group" id="basket">
+              <!-- liste recap generee sur click boutons #addToBasket -->
+            </ul>
+            <p>Voir mon panier et commander :</p>
+            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#basketModal" id="basketModalButton">Commander</button>
+          </div>
+        </div>
+        <!-- les promos du moment -->
+        <div class="card text-white bg-warning">
+          <div class="card-body">
+            <p>PROMO 1</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          </div>
+        </div>
+
+        <div class="card text-white bg-warning">
+          <div class="card-body">
+            <p>PROMO 2</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div><!-- fin content -->
+
+  <footer class="page-footer center-on-small-only white-grey lighten-5 pt-0">
+        <div class="container">
+          <hr/>
+             <h2 class="row">S-ware</h2>
+           <div id="liste" class="row">
+             <div id="para1" class="col-lg-4"><h3><a href="" title="Decouvrez nos service">Decouvrez nos services</a></h3>
+
+               <ul>
+                  <li><a href="" title="Decouvrez nos services"> <span class="glyphicon glyphicon-chevron-right"></span>Depannez en ligne</a></li>
+                  <li><a href="" title="Nous contacter"> <span class="glyphicon glyphicon-chevron-right"></span>Nous contacter</a></li>
+                </ul>
+            </div>
+            <div id="para2" class="col-lg-8 row">
+              <h3><a href="" title="Conseils eco-santé">Conseils eco+</a></h3>
+              <div class="row">
+                <div class="col-lg-4">
+                  <ul>
+                    <li><a href=""> <span class="glyphicon glyphicon-chevron-right"></span>Réflexes verts et recyclage </a></li>
+                    <li><a href=""> <span class="glyphicon glyphicon-chevron-right"></span>Forum ecologique</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-5">
+                  <ul>
+                    <li><a href=""> <span class="glyphicon glyphicon-chevron-right"></span>Règles de mise en service</a></li>
+                    <li><a href=""> <span class="glyphicon glyphicon-chevron-right"></span>Réglement en plusieurs fois</a></li>
+                  </ul>
+                </div>
+                <div class="col-lg-3">
+                  <ul>
+                    <li><a href=""> <span class="glyphicon glyphicon-chevron-right"></span>Livraison expresse</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+           </div>
+         <div id="pied" class="row">
+           <p id="mention"><span class="col-lg-2"><a href="#" title="Informations légales">Informations légales</a></span><span class="col-lg-2 text-center"><a href="#" title="Publicité">Publicité</a></span><span class="col-lg-2 text-center"><a href="#" title="Internet">Internet +</a></span>
+              <span class="col-lg-2 text-center"><a href="#" title="Signaler un contenu">Signaler un contenu</a></span><span class="col-lg-2 text-center"><a href="#" title="données personnelles">données personnelles</a></span><span class="col-lg-2 text-right"><a href="#" title="les cookies"> cookies</a></span></p>
+           <p>S-ware © 2017</p>
+         </div>
+       </div>
+   </footer>
+
+   <!-- Modal -->
+       <div class="modal fade" id="basketModal" tabindex="-1" role="dialog" aria-labelledby="basketModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-lg" role="document">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h3 class="modal-title" id="basketModalLabel">Votre panier</h3>
+               <button type="button" class="close btn-lg" data-dismiss="modal" aria-label="Close">
+                 <span aria-hidden="true">&times;</span>
+               </button>
+             </div>
+             <div class="modal-body">
+               <table class="table table-striped table-hover table-bordered">
+                             <thead class="thead-dark">
+                               <tr>
+                                 <!-- <th>img</th> -->
+                                 <th colspan="2">Articles</th>
+                                 <th>Quantités</th>
+                                 <th>Totaux</th>
+                               </tr>
+                             </thead>
+                             <tbody>
+                               <!-- row à cloner = hidden-->
+                               <tr ref="ref">
+                                 <td><img class="img-responsive" src="#" title="ref" alt="ref"/></td>
+                                 <td>titre</td>
+                                 <td>
+                                   <form class="form-group form-inline">
+                                     <div class=" input-group">
+                                       <input  class=" input-group-addon btn" type="button" id="minus"  value=" - " />
+                                       <input class="input-group" placeholder="quantite" type="text" />
+                                       <input class=" input-group-addon btn" type="button" id="plus"  value=" + " />
+                                     </div>
+                                 </form>
+                               </td>
+                                 <td>
+                                   <form class="form-group">
+                                   <div class="input-group">
+                                     <input class="form-control" id="totalRefPrice" placeholder="Total reference" type="text">
+                                     <div class="input-group-addon">€</div>
+                                   </div>
+                                 </form>
+                               </td>
+                             </tr>
+                             <!-- /row à cloner -->
+                           </tbody>
+                           <tfoot>
+                             <tr>
+                               <!-- <th></th>
+                               <th></th> -->
+                               <th colspan="3">
+
+                               </th>
+                               <th>
+                                 <form class="form-group">
+                                 <div class="input-group">
+                                   <input class="form-control" id="totalNetPrice" placeholder="Total reference" type="text">
+                                   <div class="input-group-addon">€</div>
+                                 </div>
+                                 <button type="button" class="btn btn-success btn-lg" data-dismiss="modal" id="payment">Payer</button>
+                               </form>
+                             </th>
+                             </tr>
+                           </tfoot>
+                         </table>
+                       </div>
+
+                       <div class="modal-footer">
+                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Retourner sur la boutique</button>
+
+                       </div>
+
+                     </div>
+                   </div>
+                 </div>   <!-- fin modal -->
+
+  <script src="assets/js/jquery-3.2.1.js"></script>
+  <script src="assets/js/projet.js"></script>
+  <script src="assets/js/jquery-ui.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/bootstrap-notify.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+html, body {
+  margin:0; padding: 0; font-size: 1em;
+}
+h1,h2,h3 {font-family: 'Exo', sans-serif;}
+
+/* Début CSS header / Nav */
+header {margin-top: .5em; margin-bottom: 2%;min-height: 20vh; }
+#logo {
+  /*background-color: blue;*/
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+#logo img {height:90%; margin: 1em .5em; padding: 0;}
+#logo h1 {
+  padding: 0; margin: 0;
+  height:50%; line-height: 100%;
+  color: #3EE4F2 ; font-size: 3rem; font-weight: 800;
+}
+#logo h2 {
+  padding: 0; margin: 0;
+  height:50%;line-height: 100%;
+  color: white; font-size: 1.5rem; font-weight: 400; font-variant: small-caps;
+}
+#navigation div.row:first-child {
+  height: auto; align-items: center;
+}
+/* modif classes bootstrap pour navbar */
+#hamburger {margin:0;}
+#hamburger .navbar-toggler{border-color: #fff;}
+#menu .navbar { margin: 0; padding: 0; }
+#menu .navbar .navbar-collapse[aria-expanded="true"] .nav-item { border:none;}
+#menu .navbar .navbar-nav {
+  width: 100%;
+  margin:0; padding: 0; height: auto; display: flex;
+  justify-content: center; align-items: center;
+}
+#menu .navbar .nav-item {
+  border-right: 1px solid grey;
+  margin: 0 ; padding: 0 5%;
+  font-size: 1.2em;
+}
+#menu .navbar .nav-item:last-child { border:none;}
+#menu .navbar .nav-link {margin: .2rem ; padding: 0;}
+#menu .navbar .navbar-collapse {margin: 0; padding: 0; }
+#menu .navbar .navbar-collapse, .navbar, .navbar-form,  .navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:link {
+  border:0;
+  background: none;
+  box-shadow: none;
+}
+#menu .navbar .navbar-nav > li > a:link, #menu .navbar .navbar-nav > li > a:visited {   color: #fff; }
+#menu .navbar .navbar-nav > li > a:hover { color:#3EE4F2 ;}
+/* Fin CSS header / Nav */
+
+/*carousel*/
+#slider.container-fluid {margin: 0 0 2em 0; padding: 0;}
+#slider .row, #slider .row .col-lg-12 {margin: 0; padding: 0;}
+#myCarousel{
+  height: 350px;
+}
+.carousel-inner img /*#slide1, #slide2, #slide3*/{
+height: 300px;
+width: 250px;
+}
+#popup{
+  height: 750px;
+  width: 150px;
+}
+#gamer img{
+  height: 75px;
+  width: 75px;
+}
+
+/* rubriques articles*/
+section {margin: 1em;}
+section h2.card {margin: .5em; padding: .5em;}
+section div.card, #sidebar .card { margin-bottom: 1em;}
+
+/* modal*/
+.modal-lg, modal-dialog {
+        width: 75vw;
+         max-width: 90vw;
+       }
+.modal table tr td:first-child{ max-width: 5em;}
+
+/*sidebar*/
+/*#sidebar{background-color: darkgrey;}*/
+
+/* footer */
+footer {background-color: #008080 ;}
+
+@media all  and (max-height: 480px) {}
+  #liste li{
+    list-style:none;
+  }
+  #para1{
+    background-color: #2d5353 ;
+  }
+  #para2{
+    background-color: #2d5353 ;
+  }
